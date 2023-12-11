@@ -3,29 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/index.css" type="text/css">
-  <script src="js/index.js"></script>
+
+
   <title>Title</title>
 </head>
 <body>
 <div class="body">
-  <div class="img_block">
-    <img  onclick="img_Alert()" src="./img/space1.jpg" alt="" class="img_alert"></img>
-    <img onclick="img_Alert()" src="./img/space2.jpg" alt="" class="img_alert"></img>
-    <img onclick="img_Alert()" src="./img/space3.jpg" alt="" class="img_alert"></img>
-    <img onclick="img_Alert()" src="./img/space3.jpg" alt="" class="img_alert"></img>
-    <img onclick="img_Alert()" src="./img/space3.jpg" alt="" class="img_alert"></img>
-    <img onclick="img_Alert()" src="./img/space3.jpg" alt="" class="img_alert"></img>
-    <img onclick="img_Alert()" src="./img/space3.jpg" alt="" class="img_alert"></img>
+  <div class="block">
+    <div class="img_block">
+      <img onclick="img_Alert()" src="./img/space1.jpg" alt="" class="img_alert"></img>
+      <img onclick="img_Alert()" src="./img/space2.jpg" alt="" class="img_alert"></img>
+      <img onclick="img_Alert()" src="./img/space3.jpg" alt="" class="img_alert"></img>
 
+    </div>
+
+    <div class="img_block2">
+      <img id="image_rot1" onclick="img_Rotate(90,'image_rot1',2000)" src="./img/spiral1.png" alt="" class="img_rotate1"></img>
+      <img id="image_rot2" onclick="img_Rotate(720, 'image_rot2')" src="./img/spiral2.webp" alt=""
+           class="img_rotate2"></img>
+      <img id="image_rot3" onclick="img_Rotate(3060,'image_rot3')" src="./img/spiral3.jpg" alt=""
+           class="img_rotate3"></img>
+    </div>
   </div>
 
-  <div class="img_block2">
-    <img id="image_rot1" onclick="img_Rotate(90,'image_rot1')" src="./img/spiral1.png" alt="" class="img_rotate1"></img>
-    <img id="image_rot2" onclick="img_Rotate(720, 'image_rot2')" src="./img/spiral2.webp" alt="" class="img_rotate2"></img>
-    <img id="image_rot3" onclick="img_Rotate(3090,'image_rot3')" src="./img/spiral3.jpg" alt="" class="img_rotate3"></img>
+  <div class="form">
+    <h3 >Name</h3>
+    <input  type="text" id="nameInput" maxlength="5" />
+    <h3>Sourname</h3>
+    <input type="text" />
+    <h3>Age</h3>
+    <input type="text" id="ageInput"  />
+    <button onclick="validateInput()">Save</button>
 
   </div>
-
+  <div class="link_block">
+    <a id="link" class="custom-link" href="#">wwwwwwwwwwww</a> <br>
+    <a id="link2" class="custom-link" href="#">ssssssssssss</a> <br>
+    <a id="link3" class="custom-link" href="#">dddddddddddd</a> <br>
+  </div>
+  <script src="./js/index.js"></script>
 </div>
 
 </body>
